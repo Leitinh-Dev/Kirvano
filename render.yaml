@@ -3,7 +3,7 @@ services:
     name: kirvano-api
     env: python
     pythonVersion: "3.11.9"
-    buildCommand: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+    buildCommand: pip install -r requirements.txt && python -m playwright install chromium && python -m playwright install chromium-headless-shell
     startCommand: python api/server.py
     envVars:
       - key: CLOUDFLARE_WORKER_URL

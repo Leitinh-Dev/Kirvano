@@ -49,11 +49,12 @@ async def process_card_async():
         expiration = f"{mes_formatted}/{ano_formatted}"
         
         # Cria instância da automação
+        # headless=True força o uso do chromium normal mesmo em modo headless
         automation = KirvanoStealthAutomation(
             headless=True,
             slow_mo=1000,
             url=url,
-            user_name="Railway_API"
+            user_name="Render_API"
         )
         
         # Gera dados brasileiros
