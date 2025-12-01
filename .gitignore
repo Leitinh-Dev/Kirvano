@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+*.txt
+!requirements.txt
+!Procfile
+
+# Environment
+.env
+.env.local
+
+# Node (se houver)
+node_modules/
+.npm
+
+# Railway
+.railway/
+
+# Vercel
+.vercel/
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.cache
+
+# Arquivos de resultado
+Aprovadas.txt
+kirvano_results.txt

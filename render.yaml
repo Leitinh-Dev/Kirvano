@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: kirvano-api
+    env: python
+    pythonVersion: "3.11"
+    buildCommand: pip install -r requirements.txt && playwright install chromium
+    startCommand: python api/server.py
+    envVars:
+      - key: CLOUDFLARE_WORKER_URL
+        value: https://kirvano.jcntcleber.workers.dev
+    healthCheckPath: /health
+
